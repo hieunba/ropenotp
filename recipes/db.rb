@@ -11,6 +11,7 @@ end
 
 # Configure the MySQL service
 mysql_service 'default' do
+  bind_address '127.0.0.1'
   port '3306'
   version '5.5'
   initial_root_password 'change me'
